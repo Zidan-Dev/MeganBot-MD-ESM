@@ -89,7 +89,7 @@ export async function handler(chatUpdate) {
                 if (!('getmsg' in chat))
                     chat.getmsg = false
                 if (!('detect' in chat))
-                    chat.detect = true
+                    chat.detect = false
                 if (!('sWelcome' in chat))
                     chat.sWelcome = ''
                 if (!('sBye' in chat))
@@ -105,7 +105,7 @@ export async function handler(chatUpdate) {
                     isBanned: true,
                     getmsg: false,
                     welcome: false,
-                    detect: true,
+                    detect: false,
                     sWelcome: '',
                     sBye: '',
                     sPromote: '',
